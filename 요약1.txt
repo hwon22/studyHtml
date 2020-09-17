@@ -1,0 +1,60 @@
+[DO IT! HTML5 + CSS3 웹표준의 정석]
+
+01. HTML 기본 다지기
+    -html: 하이퍼텍스트 마크업 랭귀지
+           웹 문서 언어
+    -html 구조:
+          <!doctype html>
+            <html lang="ko">
+                <head>
+                    <title>...</title> 
+                    <meta charset="utf-8">
+                </head>
+                <body>
+                </body>
+            </html>
+
+02. 텍스트 관련 태그들
+    -텍스트를 덩어리로 묶어 주는 태그
+        <hn>: 제목표시
+        <p>: 단락 _줄 자동 바꿈
+        <br>: 줄바꿈 _닫는 태그 없음
+        <hr>: 수평줄 _닫는 태그 없음
+        <blockquote>: 인용문 _들여써짐, block태그(줄 차지)
+        <pre>: 그대로
+    -텍스트를 한 줄로 표시하는 태그
+        -굵게
+            <strong>: 중요내용
+            <b>: 단순키워드
+        -이탤릭체
+            <em>: 중요내용
+            <i>: 그냥 이탤릭체
+        <q>: 인용문 _inline태그(""자동)
+        <mark>: 형광펜
+        <span>: 영역묶기 _줄 바꿈 없음, 스타일적용 굿
+        <ruby>: 동아시아 태그 _ruby 내용 rt 주석 /rt /ruby
+        <abbr>: 약자 설명
+        <cite>: 웹 참고 내용
+        <code>: 컴퓨터 코드 내용
+        <kbd>: 키보드, 음성 관련
+        <small>: 작게
+        <sub>: 아래 첨자
+        <sup>: 위 첨자
+        <s>: 취소선
+        <u>: 밑줄
+    -목록을 만드는 태그
+        <ul> <li>: 순서없음
+        <ol> <li>: 순서있음, <ol type="A" start="3">
+        <li> <li>: 끼리 중첩가능
+        <dl> <dt> <dd>: dt가 제목, dd가 설명
+    -표를 만드는 태그
+        <table> <tr> <th>/<td>: tr이 행, td가 열, th는 제목 셀
+        <td colspan="3"/td rowspan="2">: colspan이 행, rowspan이 열
+        -제목
+            <caption>: <table>열고 바로
+            <figcaption>: <figure>+<caption> 
+                <figure>\<figcaption>\<table>
+            <aria-describedby>: 표 설명 _id지정후 불러오기
+        <thead> <tbody> <tfoot>: 부분 정의 구분, 스타일 적용
+        <col> <colgroup>: 열 단위로 묶어주기, 짝 맞추기
+        
