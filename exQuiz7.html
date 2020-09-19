@@ -1,0 +1,57 @@
+<!--연습문제1-->
+<!doctype html>
+<html>
+    <head>
+        <title>예약정보</title>
+        <meta charset="utf-8">
+        <style>
+            .container{
+                width:600px;
+                margin:0 auto;
+            }
+            ul{
+                list-style: none;
+            }
+            label.title{
+                font-weight: bold;
+                width: 80px;
+                float:left;
+            }
+            li{
+                margin-bottom: 30px;
+            }
+            div.button{
+                width: 400px;
+                text-align: center;
+            }
+            fieldset{
+                width: 400px;
+                margin: 15px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>예약정보</h1>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="uname" class="title">이름</label>
+                        <input type="text" id="uname" >
+                    </li>
+                    <li>
+                        <label for="utel" class="title">휴대폰</label>
+                        <input type="tel" id="utel">
+                    </li>
+                    <li>
+                        <label for="uemail" class="title">이메일</label>
+                        <input type="email" id="uemail">
+                    </li>
+                </ul>
+            </fieldset>
+        <div class="button">
+            <input type="submit" value="예약하기">
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!--상품 주문서 작성하기-->
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>상품주문서</title>
+        <meta charset="utf-8">
+        <style>
+            .container{
+                width:600px;
+                margin: 0 auto;
+            }
+            ul{
+                list-style-type: none;
+            }
+            label.title{
+                font-weight: bold;
+                width: 80px;
+                float:left;
+            }
+            div.centered{
+                text-align: center;
+            }
+            fieldset{
+                margin: 15px 10px;
+            }
+            fieldset legend{
+                font-weight: bold;
+                font-size:18px;
+                color:purple;
+            }
+            ul li{
+                margin-bottom:10px;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>상품 주문서</h1>
+
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="uname" class="title">이름</label>
+                    <input type="text" id="uname" placeholder="여백없이 입력" required autofocus="true">
+                </li>
+                <li>
+                    <label for="utel" class="title">연락처</label>
+                    <input type="tel" id="utel" placeholder="연락가능한 번호" required>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="uaddress" class="title">주소</label>
+                    <input type="text" size="40" id="uaddress">
+                </li>
+                <li>
+                    <label for="utel" class="title">전화번호</label>
+                    <input type="tel" id="utel">
+                </li>
+                <li>
+                    <label for="umemo" class="title">메모</label>
+                    <textarea cols="40" rows="3" id="umemo"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox">괴테말라 안디쿠아 (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">인도네시아 만델링 (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">탐라는도다(블렌딩) (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="centered">
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시하기">
+        </div>
+        </div>
+    </body>
+</html>

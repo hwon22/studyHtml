@@ -1,0 +1,104 @@
+[DO IT! HTML5 + CSS3 웹표준의 정석]
+
+03. 이미지와 하이퍼링크
+    -이미지
+        이미지형식: gif, jpg, png
+        <img>: 이미지 삽입
+        <img>태그 속성: 
+            1. src: 이미지 파일 경로 지정
+            같은_그대로 하위_폴더명 상위_.. 상하위_../
+            2. alt: 이미지 설명 텍스트
+            3. width, height: 이미지 크기 조절
+            4. figure, figcaption: 이미지 설명글
+    -링크 만들기
+        <a href="주소">: 링크만들기
+            1.<a>+텍스트: 텍스트 링크
+            2.<a>+이미지: 이미지 링크
+        href속성: 텍스트링크 밑줄, 글자 색 바꾸기
+            <style> a{ color:blank; } </style>
+        target속성: 새탭에서 링크 열기
+            <a href="주소" target="_blank">
+        iframe과 target
+            iframe: 화면 안에 화면
+            target="_top"시 전체화면 출력
+        한 페이지 안 점프 앵커 만들기
+            앵커: 긴 페이지에서 뭐 클릭하면 그기로 이동
+        이미지 맵
+            이미지맵: 한 이미지에서 두 개 이상 링크
+
+    -SVG 이미지
+        svg 이미지: 벡터 이미지
+        이미지 삽입: 그냥, 체크 후 png
+        체크 후 png: modernizr 활용하기
+
+04. 폼 관련 태그들
+    -폼 만들기
+        폼: 사용자가 웹사이트로 정보를 보낼 수 있는 요소
+        <form>
+            method: 넘겨주는 방법
+                1.get: 주소표시줄에 사용자 입력내용이 그대로
+                2.post: 대부분 이렇게 제한x
+            name: 폼이름
+            action: 처리할 서버 프로그램 지정
+            target: 새창
+            autocomplete: 자동완성 on/off
+        <label>
+            입력창옆에 글씨
+            <lable>+라디오버튼, 체크박스
+        <filedset>,<legend>: 묶음선 묶음제목
+
+    -사용자 입력을 위한 <input>태그
+        <input>
+            id: 똑같은 폼 요소 반복, 스타일 적용시
+            type유형: 입력형태 (여러가지)
+                1. type="hidden" 관리자용 서버전송요소
+                2. type="text" 텍스트입력
+                3. type="password" 비밀번호입력
+                4. type="search" 검색상자 +submit 버튼
+                5. type="url" url입력
+                6. type="email" 메일주소입력
+                7. type="tel" 전화번호입력
+                8. type="number" 숫자입력
+                9. type="range" 슬라이드 막대로 숫자입력
+                10. type="radio" 라디오버튼
+                11. type="checkbox" 체크박스
+                12. type="color" 색상선택상자
+                13. type="date" type="month" type="week" 날짜표시
+                16. type="time" type="datetime" type="datetime-local" 시간지정
+                19. type="submit" 서버전송
+                20. type="reset" 입력값재설정
+                21. type="image" 이미지버튼
+                22. type="button" 버튼
+                23. type="file" 파일첨부
+
+    -<input>태그의 다양한 속성
+        autofocus: 입력 커서 표시
+        placeholder: 힌트 표시
+        readonly: 읽기 전용 필드
+        required: 필수 필드 지정
+        min, max, step
+            min: 최솟값 지정
+            max: 최댓값 지정
+            step: 범위 내 숫자 간격 지정
+        size, minlength, maxlength
+            size: 보이는 글자수 지정
+            minlength: 입력할 최소 글자수 지정
+            maxlength: 입력할 최대 글자수 지정
+        formaction: 실행한 프로그램연결
+        formenctype: 서버로 폼전송시, 데이터 해석 방법 지정
+        formmethod: 서버로 폼 전송 방법 지정
+        formnovalidate: 폼 데이터 유효성 여부 표시
+        formtarget: 폼 데이터 전송후, 서버 응답 표시 위치 지정
+        height, width: 이미지 너비와 높이 지정
+        list: datalist 옵션값을 나열해 보여줌
+        multiple: 두 개 이상의 값 입력
+
+    -여러 데이터 나열해 보여 주기
+        <select>,<optgroup>,<option>: 기본값있고 선택
+        <datalist>,<option>: 선택하면 입력
+        <textarea>: 여러 줄 입력하는 텍스트 영역 지정
+    -기타 다양한 폼 요소들
+        <button>: 버튼넣기
+        <option>: 계산결과
+        <progress>: 진행상태
+        <meter>: 값이 차지하는 크기
